@@ -7,8 +7,9 @@ client: Anglican Retirement Village
 architect: Jackson Teece Architects
 builder: Lipman
 featured: true
-featured_image: /images/ac-anglicare-seniors-living-castle-hill-01.webp
-gallery: []
+featured_image: /images/ac-anglicare-seniors-living-cast.jpg
+gallery:
+  - /images/ac-anglicare-seniors-living-cast_1.jpg
 description: >-
   Completed in March 2019, the $70m Lober Square redevelopment is nestled within
   Anglicare’s 120 acre flagship site at Castle Hill. Site Image commenced on the
