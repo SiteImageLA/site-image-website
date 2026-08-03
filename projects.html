@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Site Image</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#f0f7fa',
+              100: '#d9eef5',
+              200: '#b3dde9',
+              500: '#0b7a9c',
+              600: '#096680',
+              700: '#07526a',
+              800: '#064455',
+            },
+            charcoal: {
+              800: '#2c2c2c',
+              900: '#1a1a1a',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-brand-50 text-charcoal-900 font-sans antialiased">
+
+  <!-- Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-brand-50/90 backdrop-blur-md border-b border-brand-100">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-medium tracking-tight text-brand-700">Site Image</a>
+      
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="index.html#vision" class="hover:text-brand-600 transition">Vision</a>
+        <a href="projects.html" class="text-brand-600 font-medium">Projects</a>
+        <a href="index.html#services" class="hover:text-brand-600 transition">Services</a>
+        <a href="index.html#team" class="hover:text-brand-600 transition">Team</a>
+        <a href="index.html#contact" class="hover:text-brand-600 transition">Contact</a>
+      </nav>
+
+      <button class="md:hidden text-sm">Menu</button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="pt-32 pb-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <p class="text-sm tracking-widest uppercase text-brand-600 mb-4">Our Work</p>
+      <h1 class="text-4xl md:text-5xl font-light mb-6">Projects</h1>
+      <p class="text-charcoal-800/70 max-w-2xl leading-relaxed">
+        A selection of landscape architecture, urban design and public art projects across Australia and internationally.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="border-y border-brand-100 bg-white sticky top-16 z-40">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex gap-6 overflow-x-auto py-4 text-sm">
+        <button class="whitespace-nowrap text-brand-600 font-medium border-b-2 border-brand-600 pb-1">All</button>
+        <button class="whitespace-nowrap text-charcoal-800/70 hover:text-brand-600 transition pb-1">Residential</button>
+        <button class="whitespace-nowrap text-charcoal-800/70 hover:text-brand-600 transition pb-1">Aged Care & Seniors Living</button>
+        <button class="whitespace-nowrap text-charcoal-800/70 hover:text-brand-600 transition pb-1">Public Realm</button>
+        <button class="whitespace-nowrap text-charcoal-800/70 hover:text-brand-600 transition pb-1">Commercial</button>
+        <button class="whitespace-nowrap text-charcoal-800/70 hover:text-brand-600 transition pb-1">Masterplan</button>
+        <button class="whitespace-nowrap text-charcoal-800/70 hover:text-brand-600 transition pb-1">Educational</button>
+        <button class="whitespace-nowrap text-charcoal-800/70 hover:text-brand-600 transition pb-1">Public Art</button>
+        <button class="whitespace-nowrap text-charcoal-800/70 hover:text-brand-600 transition pb-1">Hospitality</button>
+        <button class="whitespace-nowrap text-charcoal-800/70 hover:text-brand-600 transition pb-1">Health</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+
+        <a href="project-template.html" class="group">
+          <div class="aspect-[4/3] bg-brand-100 mb-5 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center text-brand-600 text-sm">Project Image</div>
+          </div>
+          <p class="text-xs tracking-widest uppercase text-brand-600 mb-1">Aged Care & Seniors Living</p>
+          <h2 class="text-lg font-medium group-hover:text-brand-600 transition">Anglicare Seniors Living, Castle Hill</h2>
+          <p class="text-sm text-charcoal-800/70 mt-1">Castle Hill, NSW · 2019</p>
+        </a>
+
+        <a href="#" class="group">
+          <div class="aspect-[4/3] bg-brand-100 mb-5 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center text-brand-600 text-sm">Project Image</div>
+          </div>
+          <p class="text-xs tracking-widest uppercase text-brand-600 mb-1">Aged Care & Seniors Living</p>
+          <h2 class="text-lg font-medium group-hover:text-brand-600 transition">The Grove, Carrington Care</h2>
+          <p class="text-sm text-charcoal-800/70 mt-1">Location · Year</p>
+        </a>
+
+        <a href="#" class="group">
+          <div class="aspect-[4/3] bg-brand-100 mb-5 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center text-brand-600 text-sm">Project Image</div>
+          </div>
+          <p class="text-xs tracking-widest uppercase text-brand-600 mb-1">Public Realm</p>
+          <h2 class="text-lg font-medium group-hover:text-brand-600 transition">Rhodes Foreshore</h2>
+          <p class="text-sm text-charcoal-800/70 mt-1">Rhodes, NSW</p>
+        </a>
+
+        <a href="#" class="group">
+          <div class="aspect-[4/3] bg-brand-100 mb-5 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center text-brand-600 text-sm">Project Image</div>
+          </div>
+          <p class="text-xs tracking-widest uppercase text-brand-600 mb-1">Masterplan</p>
+          <h2 class="text-lg font-medium group-hover:text-brand-600 transition">Khalifa Sports City</h2>
+          <p class="text-sm text-charcoal-800/70 mt-1">60 Ha masterplan</p>
+        </a>
+
+        <a href="#" class="group">
+          <div class="aspect-[4/3] bg-brand-100 mb-5 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center text-brand-600 text-sm">Project Image</div>
+          </div>
+          <p class="text-xs tracking-widest uppercase text-brand-600 mb-1">Aged Care & Seniors Living</p>
+          <h2 class="text-lg font-medium group-hover:text-brand-600 transition">Muirfield Seniors Living</h2>
+          <p class="text-sm text-charcoal-800/70 mt-1">North Rocks, NSW</p>
+        </a>
+
+        <a href="#" class="group">
+          <div class="aspect-[4/3] bg-brand-100 mb-5 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center text-brand-600 text-sm">Project Image</div>
+          </div>
+          <p class="text-xs tracking-widest uppercase text-brand-600 mb-1">Public Art</p>
+          <h2 class="text-lg font-medium group-hover:text-brand-600 transition">Antithesis</h2>
+          <p class="text-sm text-charcoal-800/70 mt-1">Parramatta, NSW</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-16 border-t border-brand-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-10">
+        <div>
+          <p class="text-xl font-medium mb-4 text-brand-700">Site Image</p>
+          <p class="text-sm text-charcoal-800/70 max-w-xs">
+            Landscape Architects & Urban Designers creating places of lasting value since 1987.
+          </p>
+        </div>
+        <div class="flex gap-16 text-sm">
+          <div>
+            <p class="font-medium mb-3">Navigate</p>
+            <ul class="space-y-2 text-charcoal-800/70">
+              <li><a href="index.html#vision" class="hover:text-brand-600">Vision</a></li>
+              <li><a href="projects.html" class="hover:text-brand-600">Projects</a></li>
+              <li><a href="index.html#services" class="hover:text-brand-600">Services</a></li>
+              <li><a href="index.html#team" class="hover:text-brand-600">Team</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-medium mb-3">Contact</p>
+            <ul class="space-y-2 text-charcoal-800/70">
+              <li>Sydney · +61 2 8332 5600</li>
+              <li>Melbourne</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-brand-100 text-xs text-charcoal-800/50 flex justify-between">
+        <p>© 2026 Site Image. All rights reserved.</p>
+        <p>Designed for the future of place</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

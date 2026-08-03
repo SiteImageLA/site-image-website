@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Image — Landscape Architects & Urban Designers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#f0f7fa',
+              100: '#d9eef5',
+              200: '#b3dde9',
+              500: '#0b7a9c',
+              600: '#096680',
+              700: '#07526a',
+              800: '#064455',
+            },
+            charcoal: {
+              800: '#2c2c2c',
+              900: '#1a1a1a',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-brand-50 text-charcoal-900 font-sans antialiased">
+
+  <!-- Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-brand-50/90 backdrop-blur-md border-b border-brand-100">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-medium tracking-tight text-brand-700">Site Image</a>
+      
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#vision" class="hover:text-brand-600 transition">Vision</a>
+        <a href="projects.html" class="hover:text-brand-600 transition">Projects</a>
+        <a href="#services" class="hover:text-brand-600 transition">Services</a>
+        <a href="#team" class="hover:text-brand-600 transition">Team</a>
+        <a href="#contact" class="hover:text-brand-600 transition">Contact</a>
+      </nav>
+
+      <button class="md:hidden text-sm">Menu</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative h-screen flex items-end">
+    <div class="absolute inset-0 bg-gradient-to-b from-charcoal-900/40 to-charcoal-900/70">
+      <div class="w-full h-full bg-brand-100 flex items-center justify-center text-brand-600">
+        <span class="text-sm tracking-widest uppercase">Hero Project Image</span>
+      </div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pb-20 w-full text-white">
+      <p class="text-sm tracking-widest uppercase mb-4 opacity-80">Landscape Architects & Urban Designers</p>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-light leading-tight max-w-3xl mb-8">
+        We design for people, place, and lasting value
+      </h1>
+      <a href="projects.html" class="inline-flex items-center gap-2 text-sm tracking-wide border-b border-white/60 pb-1 hover:border-white transition">
+        View Projects
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section id="vision" class="py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl">
+        <p class="text-sm tracking-widest uppercase text-brand-600 mb-6">Our Vision</p>
+        <h2 class="text-3xl md:text-4xl font-light leading-snug mb-10">
+          At Site Image, we are a dedicated team of Landscape Architects and Urban Designers committed to providing creative ideas when crafting the natural and built environment.
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-12 mt-16">
+        <div>
+          <h3 class="text-lg font-medium mb-4">We design for people</h3>
+          <p class="text-charcoal-800/80 leading-relaxed">
+            Our designs embrace the past and present, to craft a unique, individual design response for the future.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-medium mb-4">We design for place</h3>
+          <p class="text-charcoal-800/80 leading-relaxed">
+            Our work is grounded in sustainability and we strive to integrate responsible design strategies into each and every project.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-medium mb-4">We design to add value</h3>
+          <p class="text-charcoal-800/80 leading-relaxed">
+            Since 1987, we have been creating places that become the heart of the community, and the destination visitors want to experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="projects" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-end justify-between mb-12">
+        <div>
+          <p class="text-sm tracking-widest uppercase text-brand-600 mb-3">Selected Work</p>
+          <h2 class="text-3xl md:text-4xl font-light">Featured Projects</h2>
+        </div>
+        <a href="projects.html" class="hidden md:inline-flex text-sm tracking-wide border-b border-charcoal-900/30 pb-1 hover:border-brand-600 hover:text-brand-600 transition">
+          View all projects
+        </a>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <a href="project-template.html" class="group">
+          <div class="aspect-[4/3] bg-brand-100 mb-5 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center text-brand-600 text-sm">Project Image</div>
+          </div>
+          <p class="text-xs tracking-widest uppercase text-brand-600 mb-1">Aged Care & Seniors Living</p>
+          <h3 class="text-lg font-medium group-hover:text-brand-600 transition">Anglicare Seniors Living, Castle Hill</h3>
+          <p class="text-sm text-charcoal-800/70 mt-1">Castle Hill, NSW · 2019</p>
+        </a>
+
+        <a href="#" class="group">
+          <div class="aspect-[4/3] bg-brand-100 mb-5 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center text-brand-600 text-sm">Project Image</div>
+          </div>
+          <p class="text-xs tracking-widest uppercase text-brand-600 mb-1">Public Realm</p>
+          <h3 class="text-lg font-medium group-hover:text-brand-600 transition">Rhodes Foreshore</h3>
+          <p class="text-sm text-charcoal-800/70 mt-1">Rhodes, NSW</p>
+        </a>
+
+        <a href="#" class="group">
+          <div class="aspect-[4/3] bg-brand-100 mb-5 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center text-brand-600 text-sm">Project Image</div>
+          </div>
+          <p class="text-xs tracking-widest uppercase text-brand-600 mb-1">Masterplan</p>
+          <h3 class="text-lg font-medium group-hover:text-brand-600 transition">Khalifa Sports City</h3>
+          <p class="text-sm text-charcoal-800/70 mt-1">60 Ha masterplan</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-24 md:py-32">
+    <div class="max-w-7xl mx-auto px-6">
+      <p class="text-sm tracking-widest uppercase text-brand-600 mb-3">What We Do</p>
+      <h2 class="text-3xl md:text-4xl font-light mb-16">Professional Design Services</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <h3 class="text-lg font-medium mb-4">Landscape Architecture</h3>
+          <ul class="space-y-2 text-sm text-charcoal-800/80">
+            <li>Concept to Construction Documentation</li>
+            <li>Landscape Masterplanning</li>
+            <li>Podium & roof gardens</li>
+            <li>Ecological design & play spaces</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-medium mb-4">Urban Design + Planning</h3>
+          <ul class="space-y-2 text-sm text-charcoal-800/80">
+            <li>Urban & Innovation Districts</li>
+            <li>Mixed Use Development</li>
+            <li>New Communities & Waterfronts</li>
+            <li>Corporate Campuses</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-medium mb-4">Public Art</h3>
+          <ul class="space-y-2 text-sm text-charcoal-800/80">
+            <li>Strategy & Masterplanning</li>
+            <li>Concept Development</li>
+            <li>Heritage Interpretation</li>
+            <li>Cultural Planning</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-medium mb-4">Architecture & Visualisation</h3>
+          <ul class="space-y-2 text-sm text-charcoal-800/80">
+            <li>Design Visualisation</li>
+            <li>3D modelling & graphics</li>
+            <li>Documentation support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="py-24 bg-brand-800 text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-sm tracking-widest uppercase text-brand-200 mb-4">Our Team</p>
+          <h2 class="text-3xl md:text-4xl font-light mb-6">Led by experienced partners across Australia and beyond</h2>
+          <p class="text-white/75 leading-relaxed mb-8">
+            Our team is led by Partners Ross Shepherd and Nick Metcalf in Sydney, Mike Phillips in Melbourne, and Jason Zhang in Shanghai — supported by associates and specialists in construction, public art, horticulture, and design visualisation.
+          </p>
+          <a href="#" class="text-sm tracking-wide border-b border-white/40 pb-1 hover:border-white transition">Meet the team</a>
+        </div>
+        <div class="grid grid-cols-2 gap-6 text-sm">
+          <div class="bg-white/10 p-6 rounded-lg">
+            <p class="text-brand-200 mb-2">Sydney</p>
+            <p>1/3-5 Baptist St<br>Redfern NSW 2016</p>
+            <p class="mt-3">+61 2 8332 5600</p>
+          </div>
+          <div class="bg-white/10 p-6 rounded-lg">
+            <p class="text-brand-200 mb-2">Melbourne</p>
+            <p>109/1 Wilson Avenue<br>Brunswick VIC 3056</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="py-16 border-t border-brand-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-10">
+        <div>
+          <p class="text-xl font-medium mb-4 text-brand-700">Site Image</p>
+          <p class="text-sm text-charcoal-800/70 max-w-xs">
+            Landscape Architects & Urban Designers creating places of lasting value since 1987.
+          </p>
+        </div>
+        <div class="flex gap-16 text-sm">
+          <div>
+            <p class="font-medium mb-3">Navigate</p>
+            <ul class="space-y-2 text-charcoal-800/70">
+              <li><a href="#vision" class="hover:text-brand-600">Vision</a></li>
+              <li><a href="projects.html" class="hover:text-brand-600">Projects</a></li>
+              <li><a href="#services" class="hover:text-brand-600">Services</a></li>
+              <li><a href="#team" class="hover:text-brand-600">Team</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-medium mb-3">Contact</p>
+            <ul class="space-y-2 text-charcoal-800/70">
+              <li>Sydney · +61 2 8332 5600</li>
+              <li>Melbourne</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-brand-100 text-xs text-charcoal-800/50 flex justify-between">
+        <p>© 2026 Site Image. All rights reserved.</p>
+        <p>Designed for the future of place</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
